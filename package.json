@@ -23,8 +23,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint src",
-        "prettier:fix": "prettier --write .",
-        "prettier:check": "prettier --check .",
+        "prettier:fix": "prettier --write",
+        "prettier:check": "prettier --check",
         "prepare": "husky install"
     },
     "eslintConfig": {
@@ -56,11 +56,11 @@
         }
     },
     "lint-staged": {
-      "*.{js,ts,tsx}": [
-          "eslint --quiet --cache --fix"
-      ],
-      "*.{json,js,ts,jsx,tsx,html}": [
-          "prettier --write"
-      ]
+        "*.{js,ts,tsx}": [
+            "eslint --quiet --cache --fix"
+        ],
+        "*.{json,js,ts,jsx,tsx,html}": [
+            "prettier --write"
+        ]
     }
 }
